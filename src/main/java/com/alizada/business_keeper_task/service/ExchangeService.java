@@ -42,7 +42,6 @@ public class ExchangeService {
             Integer daysIndex = 0;
 
             while (daysIndex < 5) {
-                calendar.add(Calendar.DATE, -1);
 
                 //(excluding Sunday and Saturday
                 if(calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY || calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY){
@@ -77,7 +76,7 @@ public class ExchangeService {
                 }
 
                 helperPreviousDayExchangeRate = exchangeRateByDate;
-
+                calendar.add(Calendar.DATE, -1);
                 daysIndex++;
             }
 
