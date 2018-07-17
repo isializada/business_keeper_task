@@ -45,6 +45,7 @@ public class ExchangeService {
 
                 //(excluding Sunday and Saturday
                 if(calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY || calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY){
+                    calendar.add(Calendar.DATE, -1);
                     continue;
                 }
 
