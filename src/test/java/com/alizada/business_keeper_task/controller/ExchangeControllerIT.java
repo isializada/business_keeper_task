@@ -51,9 +51,9 @@ public class ExchangeControllerIT {
         String base = "USD";
         String target = "RUB";
         this.mockMvc.perform(get("/api/exchange-rate/" + date + "/" + base + "/" + target))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.rate", Matchers.equalTo(73.7787)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.rateAverage", Matchers.equalTo(73.7787)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.trend", Matchers.equalTo("constant")))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.rate", Matchers.equalTo(73.6646)))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.rateAverage", Matchers.equalTo(73.40675999999999)))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.trend", Matchers.equalTo("descending")))
                 .andDo(MockMvcResultHandlers.print());
     }
 
