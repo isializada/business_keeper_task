@@ -29,6 +29,7 @@ public class ExchangeService {
 
         ExchangeRateModel exchangeRateModel = new ExchangeRateModel();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat stringFormat = new SimpleDateFormat("yyyy-MM-dd");
 
         try {
             Date requestedDate = dateFormat.parse(date);
