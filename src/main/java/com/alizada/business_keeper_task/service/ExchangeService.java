@@ -49,7 +49,8 @@ public class ExchangeService {
                 }
 
                 //get exchange rate by path variables
-                Double exchangeRateByDate = exchangeRateByDateAndCurrency(date, baseCurrency, targetCurrency);
+                Date currentDate = calendar.getTime();
+                Double exchangeRateByDate = exchangeRateByDateAndCurrency(stringFormat.format(currentDate), baseCurrency, targetCurrency);
                 if(exchangeRateByDate == null){
                     Logger.getLogger().error("Incorrect path variables");
                     exchangeRateModel.setMessage("Incorrect path variables");
