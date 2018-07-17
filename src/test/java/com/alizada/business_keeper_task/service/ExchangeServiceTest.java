@@ -59,7 +59,7 @@ public class ExchangeServiceTest {
     @Test
     public void shouldReturnEstimatedExchangeRate() throws Exception{
         //GIVEN
-        String date = "2018-07-08";
+        String date = "2018-07-06";
         String base = "USD";
         String target = "RUB";
         //WHEN
