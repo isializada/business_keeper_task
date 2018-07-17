@@ -38,7 +38,7 @@ public class ExchangeControllerIT {
 
     @Test
     public void shouldReturn200Status() throws Exception {
-        String date = "2018-07-05";
+        String date = "2018-07-06";
         String base = "USD";
         String target = "RUB";
         this.mockMvc.perform(get("/api/exchange-rate/" + date + "/" + base + "/" + target))
